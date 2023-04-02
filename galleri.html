@@ -37,52 +37,59 @@
     </nav>
 
     <!-- Content -->
-    <div class="container">
+    <div class="bildspel-container">
+
         <!-- Images, 3st  -->
+
         <!-- Img 1 -->
-        <div class="image fade big">
+        <div class="images fade">
             <img
               src="https://images.unsplash.com/photo-1500293669-115211273e5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
               alt="Familj på musikfestival"
-              width="100%"
+              style="width:100%"
             />
         </div>
+
         <!-- Img2 -->
-        <div class="image fade">
+        <div class="images fade">
             <img 
                 src="https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" 
                 alt="Tomtebloss"
-                width="100%">
+                style="width:100%"
+            />
         </div>
+
         <!-- Img 3 -->
-        <div class="image fade">
+        <div class="images fade">
             <img 
                 src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" 
                 alt="Hand heart shape"
-                width="100%">
+                style="width:100%"
+            />
         </div>
 
-        <!-- Icons -->
+        <!-- Icons, blädda -->
         <!-- Icon 1, bläddra vänster -->
-        <i
-            id="prev"
-            onclick="show_image(-1)"
+        <i id="prev"
+            onclick="changeSlide(-1)"
             class="fa-solid fa-chevron-left"
         ></i>
         <!-- Icon 2, bläddra höger -->
         <i
             id="next"
-            onclick="show_image(1)"
+            onclick="changeSlide(1)"
             class="fa-solid fa-chevron-right"
         ></i>
 
-        <!-- Dots -->
-        <div class="dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-        </div>
-    </div>
+        
+    </div> 
+
     <script src="script.js"></script>
 </body>
 </html>
+
+
+<!-- 
+    Font awesome; icon pil
+    https://fontawesome.com/icons/chevron-right?f=classic&s=solid
+ -->

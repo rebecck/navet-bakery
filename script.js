@@ -1,26 +1,30 @@
-let index = 0;
+let slideIndex = 1;
 
-/*Use the function*/
-showImage(index);
+showSlides(slideIndex);
 
-/*Declare the function*/
-function showImage(i) {
-    index += i;
-
-    let images = document.getElementsByClassName("image");
-
-    let dots = document.getElementsByClassName("dot");
-
-    /*Hides all image when clicked on icon (next or prev) */
-    for (i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-    }
-
-
+//Next och previous controls 
+function changeSlide(n) {
+    showSlides(slideIndex += n);
 }
 
-/*
-    https://blog.logrocket.com/build-image-carousel-from-scratch-vanilla-javascript/
 
-    https://www.google.com/search?q=learn+to+make+an+image+carousel&oq=learn+to+make+an+image+carousel&aqs=chrome..69i57j0i22i30l9.6303j0j4&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:e61a1e68,vid:9HcxHDS2w1s
-*/
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("images"); //take the images and puts in an array
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex-1].style.display = "block"; /*Vet ej varför?*/
+}
+
+    

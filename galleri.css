@@ -55,90 +55,67 @@ nav {
 
 /* Content */
 
-.container {
-    width: 30%;
-    height: 50vh;
-    margin: auto;
-    margin-top: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+/* W3 Schools */
+
+/* Bildspel container */
+.bildspel-container {
+    max-width: 500px; /* Välj maxstorlek på bild*/
     position: relative;
+    /* margin: auto; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Placera bildspelet i mitten*/
+    
 }
 
-.image {
-    /* display: none; */
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    overflow: hidden;
+/* Gömmer bilderna  */
+.images {
+    display: none;
 }
 
-/* Pilarna */
-#prev {
-    position: absolute;
-    color: whitesmoke;
-    top: 38%;
-    left: 0;
-    cursor: pointer;
-    padding: 16px;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none; /*Try to remove*/
-}
-
+/* Nästa och förra ikonerna */
+#prev,
 #next {
-    position: absolute;
-    color: whitesmoke;
-    top: 38%;
-    right: 0;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* width: auto; */
+    /* margin-top: -22px; */
     padding: 16px;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: 0.6s ease;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.6s ease; /*När vi gör hover och byter färg; gör det långsamt*/
+    border-radius: 0 3px 3px 0;
+    border: 1px solid red; 
+    user-select: none; /*Use cannot copy text/icon image*/
+}
+
+/* Fytta next button till höger */
+#next {
+    right: 0;
     border-radius: 3px 0 0 3px;
-    user-select: none;
 }
 
-/* Hover effect */
-#prev:hover,
-#next:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+/*On hover, ge en bakgrund*/
+#next:hover,
+#prev:hover {
+    background-color: rgba(100, 40, 0, 0.8);
 }
 
-/* Dots */
-.dots {
-    /* text-align: center; */
-    margin: 2%;
+/* Fading animering */
+.fade {
+    animation-name: fade; /*Måste vara samma namn som keyframe (i detta fall fade*/
+    animation-duration: 1s;
 }
 
-.dot {
-    height: 15px;
-    width: 15px;
-    background-color: #bbb;
-    display: inline-block;
-    border-radius: 50%;
-    margin: 0 2px;
-    transition: background-color 0.6s ease;
-}
+@keyframes fade {
+    from {opacity: 0.4} /*Testa att ändra, gör att bilden fadar in. opacity 0 = helt transparant, 1 = helt synlig*/
+    to {opacity: 1}
+} 
 
-.active {
-    background-color: #717171;
-  }
 
-  .fade {
-    animation: fade 1.5s;
-  }
 
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+
+
+
