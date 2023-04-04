@@ -1,0 +1,87 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/* Perhaps change this code to class body instead */
+body {
+    background-color: rgba(0,0,0,0.6);
+	/* background-image: url("https://images.unsplash.com/photo-1579697096985-41fe1430e5df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80"); */
+	background-image: url("https://images.unsplash.com/photo-1603190287605-e6ade32fa852?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size:cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-position: 25% 75%;
+	background-blend-mode: multiply;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+/* Navigation bar */
+
+nav {
+    /* display: flex; */
+    /* padding: 1px 0px; */
+    background-color: rgba(59, 17, 65, 0.731); 
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    border: 1px solid black;
+}
+
+.nav-list {
+    display: flex;
+    padding: 5px 0;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo {
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.logo a {
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav-item a {
+    text-decoration: none;
+    text-align: center;
+    color: rgba(248, 241, 241, 0.979);
+    padding: 20px;
+    /* margin: 20px; */
+    /* background-color: rgb(16, 9, 1); */
+    /* border-radius: 8px; */
+    /* border: 1.3px solid white; */
+    /* display: block; */
+    /* border: 2px solid red; */
+}
+
+.nav-item > a:hover {
+    background-color: rgba(79, 77, 77, 0.9);
+}
+
+/* Line up card */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.kontakt {
+    display: flex;
+    gap: 12px;
+    color: whitesmoke;
+    background-color: rgba(0,0,0,0.9);
+    padding: 50px 200px;
+}
