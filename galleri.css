@@ -57,12 +57,26 @@ nav {
 
 /* W3 Schools */
 
+.header {
+    position: absolute;
+    background-color: rgba(45, 14, 49, 0.8);
+    /* background-color: rgba(59, 17, 65, 0.731); */
+    color: whitesmoke;
+    padding: 2px 8px;
+    font-size: 24px;
+    margin-bottom: 12px;
+    align-items: center;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Placera bildspelet i mitten*/
+}
+
 /* Bildspel container */
 .bildspel-container {
     max-width: 500px; /* Välj maxstorlek på bild*/
     position: relative;
     /* margin: auto; */
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); /*Placera bildspelet i mitten*/
     
@@ -80,7 +94,7 @@ nav {
     position: absolute;
     top: 50%;
     /* width: auto; */
-    /* margin-top: -22px; */
+    margin-top: -32px;
     padding: 16px;
     color: whitesmoke;
     font-weight: 700;
