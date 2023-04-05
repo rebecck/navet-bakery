@@ -78,10 +78,10 @@ nav {
 .bildspel-container {
     max-width: 500px; /* Välj maxstorlek på bild*/
     position: relative;
-    /* margin: auto; */
-    /* top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%); Placera bildspelet i mitten */
+    /* margin: auto;  */
+    /* top: 40%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); Placera bildspelet i mitten  */
     align-self: center;
     
 }
